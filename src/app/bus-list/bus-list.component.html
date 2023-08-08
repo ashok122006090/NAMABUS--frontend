@@ -1,0 +1,29 @@
+<div class = "row">
+    <h2> Bus List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Price</th>
+            <th> Seats </th>
+            <th> Bus Type</th>
+            <th> Starting Point </th>
+            <th> Ending Point </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let bus of buses" >
+            <td> {{ bus.price }} </td>
+            <td> {{ bus.seats }} </td>
+            <td> {{ bus.busTypes }} </td>
+            <td> {{ bus.startpoint }} </td>
+            <td> {{ bus.endpoint }} </td>
+            <td>
+                <button (click) = "updateBus(bus.id)" class = "btn btn-primary"> Update</button>
+                <button (click) = "deleteBus(bus.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

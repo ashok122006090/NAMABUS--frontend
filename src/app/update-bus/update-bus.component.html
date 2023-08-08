@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Update Bus </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label>Price</label>
+                        <input type="number" class="form-control" id="price" [(ngModel)]="bus.price" name="price">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Seats</label>
+                        <input type="number" class="form-control" id="seats" [(ngModel)]="bus.seats" name="seats">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bus Type</label>
+                        <select class="form-control" id="busTypes" [(ngModel)]="bus.busTypes" name="busTypes">
+                            <option [ngValue]="busType" *ngFor="let busType of busTypeOptions">{{ busType }}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Start Point</label>
+                        <input type="text" class="form-control" id="startpoint" [(ngModel)]="bus.startpoint" name="startpoint">
+                    </div>
+
+                    <div class="form-group">
+                        <label>End Point</label>
+                        <input type="text" class="form-control" id="endpoint" [(ngModel)]="bus.endpoint" name="endpoint">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
