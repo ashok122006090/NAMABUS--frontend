@@ -1,0 +1,67 @@
+<div class="row">
+
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+
+        <div class="row">
+
+            <h3 class="text-center"> create Feedback </h3>
+
+            <hr />
+
+            <div class="card-body">
+
+                <form (ngSubmit)="onSubmit()">
+
+                   
+
+ 
+
+                    <div class="form-group">
+
+                        <label>Comment</label>
+
+                        <textarea class="form-control" id="comment" [(ngModel)]="feedback.comment" name="comment"></textarea>
+
+                    </div>
+
+ 
+
+                    <div class="form-group">
+
+                        <label>Rating</label>
+
+                        <select class="form-control" id="rating" [(ngModel)]="feedback.rating" name="rating">
+
+                            <option value="1">1 Star</option>
+
+                            <option value="2">2 Stars</option>
+
+                            <option value="3">3 Stars</option>
+
+                            <option value="4">4 Stars</option>
+
+                            <option value="5">5 Stars</option>
+
+                        </select>
+
+                    </div>
+
+                   
+
+                    <br />
+
+                    <button class="btn btn-success" type="submit">Submit Feedback</button>
+
+ 
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ 

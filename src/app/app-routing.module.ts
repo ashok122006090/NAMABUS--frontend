@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { AddPaymentComponent } from './add-payment/add-payment.component';
 import { PaymentListComponent } from './payment-list/payment-list.component';
+import { FeedbackListComponent } from './feedback-list/feedback-list.component';
+import { AddFeedbackComponent } from './add-feedback/add-feedback.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,10 +19,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   {path: 'buses', component: BusListComponent},
+  {path: 'feedbacks', component: FeedbackListComponent},
   {path: 'payments', component: PaymentListComponent},
   {path: 'add-bus', component: AddBusComponent},
  
   {path: 'add-payment', component: AddPaymentComponent},
+  {path: 'add-feedback', component: AddFeedbackComponent},
   //{path: '', redirectTo: 'buses', pathMatch: 'full'},
   {path: 'update-bus/:id', component: UpdateBusComponent},
   
