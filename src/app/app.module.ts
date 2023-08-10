@@ -9,6 +9,13 @@ import { UpdateBusComponent } from './update-bus/update-bus.component';
 import { DeleteBusComponent } from './delete-bus/delete-bus.component';
 import { BusListComponent } from './bus-list/bus-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+//import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
+import { AddPaymentComponent } from './add-payment/add-payment.component';
+import { PaymentService } from './payment.service';
+import { PaymentListComponent } from './payment-list/payment-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +23,12 @@ import { HttpClientModule } from '@angular/common/http';
     AddBusComponent,
     UpdateBusComponent,
     DeleteBusComponent,
-    BusListComponent
+    BusListComponent,
+    HomeComponent,
+    LoginComponent,
+    AboutComponent,
+    AddPaymentComponent,
+    PaymentListComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule
   ],
   providers: [],
+ // providers: [PaymentService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

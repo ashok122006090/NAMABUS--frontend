@@ -1,0 +1,53 @@
+<div class="row">
+
+    <h2>Payment List</h2>
+  
+  </div>
+  
+   
+  
+  <table class="table table-striped table-bordered">
+  
+    <thead>
+  
+      <tr>
+  
+        <th>Paymentid</th>
+  
+        <th>Bookingid</th>
+  
+        <th>Amount</th>
+  
+        <th>PaymentStatus</th>
+  
+        <th>Transactiondate</th>
+  
+   
+  
+        <th>Actions</th>
+  
+      </tr>
+  
+    </thead>
+  
+    <tbody>
+  
+      <tr *ngFor="let payment of payments">
+  
+        <td>{{ payment.paymentid }}</td>
+  
+        <td>{{ payment.bookingid }}</td>
+  
+        <td>{{ payment.amount }}</td>
+  
+        <td>{{ payment.paymentStatus }}</td>
+  
+        <td>{{ payment.transactionDate }}</td>
+  
+      </tr>
+  
+    </tbody>
+  
+  </table>
+  
+   
