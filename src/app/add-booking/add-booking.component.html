@@ -1,0 +1,238 @@
+
+<div class="row">
+
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+  
+      <div class="row">
+  
+        <h3 class="text-center">Please Book your Ticket</h3>
+  
+        <hr />
+  
+        <div class="card-body">
+  
+          <form (ngSubmit)="onSubmit()">
+  
+            <div class="form-group">
+  
+              <label>bookingId</label>
+  
+              <input
+  
+                type="number"
+  
+                class="form-control"
+  
+                id="bookingId"
+  
+                [(ngModel)]="booking.bookingId"
+  
+                name="bookingId"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>boardingPoint</label>
+  
+              <input
+  
+                type="text"
+  
+                class="form-control"
+  
+                id="boardingPoint"
+  
+                [(ngModel)]="booking.boardingPoint"
+  
+                name="boardingPoint"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>droppingPoint</label>
+  
+              <input
+  
+                type="text"
+  
+                class="form-control"
+  
+                id="droppingPoint"
+  
+                [(ngModel)]="booking.droppingPoint"
+  
+                name="droppingPoint"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>journeyDate</label>
+  
+              <input
+  
+                type="date"
+  
+                class="form-control"
+  
+                id="journeyDate"
+  
+                [(ngModel)]="booking.journeyDate"
+  
+                name="journeyDate"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>startTime</label>
+  
+              <input
+  
+                type="time"
+  
+                class="form-control"
+  
+                id="startTime"
+  
+                [(ngModel)]="booking.startTime"
+  
+                name="startTime"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>seatNum</label>
+  
+              <input
+  
+                type="number"
+  
+                class="form-control"
+  
+                id="seatNum"
+  
+                [(ngModel)]="booking.seatNum"
+  
+                name="seatNum"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>amount</label>
+  
+              <input
+  
+                type="number"
+  
+                class="form-control"
+  
+                id="amount"
+  
+                [(ngModel)]="booking.amount"
+  
+                name="amount"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>ticketNum</label>
+  
+              <input
+  
+                type="number"
+  
+                class="form-control"
+  
+                id="ticketNum"
+  
+                [(ngModel)]="booking.ticketNum"
+  
+                name="ticketNum"
+  
+              />
+  
+            </div>
+  
+   
+  
+            <div class="form-group">
+  
+              <label>BookingStatus</label>
+  
+              <select
+  
+                class="form-control"
+  
+                id="BookingStatus"
+  
+                [(ngModel)]="booking.BookingStatus"
+  
+                name="BookingStatus"
+  
+              >
+  
+                <option
+  
+                  [ngValue]="BookingStatus"
+  
+                  *ngFor="let BookingStatus of BookingStatusOptions"
+  
+                >
+  
+                  {{ BookingStatus }}
+  
+                </option>
+  
+              </select>
+  
+            </div>
+  
+   
+  
+            <br />
+  
+            <button class="btn btn-success" type="submit">Submit</button>
+  
+          </form>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>

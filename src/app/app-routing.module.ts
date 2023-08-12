@@ -11,6 +11,10 @@ import { AddPaymentComponent } from './add-payment/add-payment.component';
 import { PaymentListComponent } from './payment-list/payment-list.component';
 import { FeedbackListComponent } from './feedback-list/feedback-list.component';
 import { AddFeedbackComponent } from './add-feedback/add-feedback.component';
+import { AddBookingComponent } from './add-booking/add-booking.component';
+import { BookingListComponent } from './booking-list/booking-list.component';
+import { UpdatebookingComponent } from './updatebooking/updatebooking.component';
+import { ViewAllBusesComponent } from './view-all-buses/view-all-buses.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,14 +23,22 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   {path: 'buses', component: BusListComponent},
+
+  {path: 'view-all-buses', component: ViewAllBusesComponent},
   {path: 'feedbacks', component: FeedbackListComponent},
   {path: 'payments', component: PaymentListComponent},
   {path: 'add-bus', component: AddBusComponent},
  
   {path: 'add-payment', component: AddPaymentComponent},
   {path: 'add-feedback', component: AddFeedbackComponent},
+  {path: 'add-booking', component: AddBookingComponent},
   //{path: '', redirectTo: 'buses', pathMatch: 'full'},
   {path: 'update-bus/:id', component: UpdateBusComponent},
+
+  {path: 'view-all-buses', component: AddBookingComponent},
+  {path: 'booking-list', component: BookingListComponent},
+  {path: 'updatebooking', component: UpdatebookingComponent},
+
   
 ]
 

@@ -2,6 +2,7 @@
   <ul class = "navbar-nav">
     <li><a routerLink="/home">Home</a></li>
     <li><a routerLink="/admin">Admin</a></li>
+    <li><a routerLink="/add-booking">Booking</a></li>
     <li><a routerLink="/login">Login</a></li>
     <li><a routerLink="/about">About</a></li>
     <li class = "nav-item">
@@ -11,7 +12,7 @@
       <li class = "nav-item">  
         <li class = "nav-item">
         
-          <a routerLink="/" routerLinkActive="active" class="nav-link" >Booking</a>
+          <a routerLink="/view-all-buses" routerLinkActive="active" class="nav-link" >Booking</a>
       </li>
       
       <li class = "nav-item">
@@ -25,12 +26,7 @@
         
    
    
-      <li class = "nav-item">
-        
-        
-        <a routerLink="/about" routerLinkActive="active" class="nav-link" >about Us</a>
-    </li>
-  
+     
      
   <li class = "nav-item">
     
@@ -42,6 +38,12 @@
   
     <a routerLink="/add-feedback" routerLinkActive="active" class="nav-link" >give feedback</a>
 </li>
+<li class = "nav-item">
+        
+        
+  <a routerLink="/about" routerLinkActive="active" class="nav-link" >about Us</a>
+</li>
+
   </ul>
 </nav>
 
@@ -49,8 +51,3 @@
 <div class = "container">
     <router-outlet></router-outlet>
 </div>
-<footer class = "footer">
-    <div class = "container">
-        <span>HAVE A SAFE AND HAPPY JOURNEY</span>
-    </div>
-</footer>

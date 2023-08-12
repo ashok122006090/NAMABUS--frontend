@@ -19,6 +19,12 @@ import { PaymentListComponent } from './payment-list/payment-list.component';
 import { FeedbackListComponent } from './feedback-list/feedback-list.component';
 import { DeleteFeedbackComponent } from './delete-feedback/delete-feedback.component';
 import { AddFeedbackComponent } from './add-feedback/add-feedback.component';
+import { AddBookingComponent } from './add-booking/add-booking.component';
+import { BookingListComponent } from './booking-list/booking-list.component';
+import { DeletebookingComponent } from './deletebooking/deletebooking.component';
+import { UpdatebookingComponent } from './updatebooking/updatebooking.component';
+import { ViewAllBusesComponent } from './view-all-buses/view-all-buses.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +40,13 @@ import { AddFeedbackComponent } from './add-feedback/add-feedback.component';
     PaymentListComponent,
     FeedbackListComponent,
     DeleteFeedbackComponent,
-    AddFeedbackComponent
+    AddFeedbackComponent,
+    AddBookingComponent,
+    BookingListComponent,
+    DeletebookingComponent,
+    UpdatebookingComponent,
+    ViewAllBusesComponent,
+   
   ],
   imports: [
     BrowserModule,

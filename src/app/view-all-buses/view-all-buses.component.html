@@ -20,10 +20,9 @@
             <td> {{ bus.busTypes }} </td>
             <td> {{ bus.startpoint }} </td>
             <td> {{ bus.endpoint }} </td>
-            <td>
-                <button (click) = "updateBus(bus.id)" class = "btn btn-primary"> Update</button>
-                <button (click) = "deleteBus(bus.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
-            </td>
+           <li><a routerLink="/add-booking"> book ticket</a></li>
+       
+           
         </tr>
     </tbody>
 </table>
