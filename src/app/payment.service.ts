@@ -16,7 +16,7 @@ import { Payment, PaymentStatus } from './payment';
 
 export class PaymentService {
 
-  private apiUrl = 'http://localhost:8080/api/Payment';
+  private apiUrl = 'http://localhost:8070/api/Payment';
 
  
 

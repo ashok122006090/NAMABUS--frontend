@@ -7,7 +7,7 @@ import { Bus, BusType } from './bus';
   providedIn: 'root'
 })
 export class BusService {
-  private apiUrl = "http://localhost:8080/api/buses";
+  private apiUrl = "http://localhost:8070/api/buses";
 
   constructor(private httpClient: HttpClient) {}
 

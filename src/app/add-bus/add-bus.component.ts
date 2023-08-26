@@ -3,7 +3,7 @@ import { Bus,BusType } from '../bus';
 import { BusService } from '../bus.service';
 import { Router } from '@angular/router';
 
-@Component({
+@Component({ 
   selector: 'app-add-bus',
   templateUrl: './add-bus.component.html',
   styleUrls: ['./add-bus.component.css']

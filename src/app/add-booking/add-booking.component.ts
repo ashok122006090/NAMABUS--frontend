@@ -54,7 +54,7 @@ export class AddBookingComponent implements OnInit {
 
   goToBookingList() {
 
-    this.router.navigate(['/bookings']);
+    this.router.navigate(['/booking-list']);
 
   }
 

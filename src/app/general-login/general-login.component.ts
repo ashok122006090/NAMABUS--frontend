@@ -1,24 +1,12 @@
-
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../login-service.service';
-
-
-
- 
+import { LoginService } from '../login.service';
 
 @Component({
-
-  selector: 'app-login',
-
-  templateUrl: './login.component.html',
-
-  styleUrls: ['./login.component.css']
-
+  selector: 'app-general-login',
+  templateUrl: './general-login.component.html',
+  styleUrls: ['./general-login.component.css']
 })
-
-export class LoginComponent implements OnInit{
-
- 
+export class GeneralLoginComponent implements OnInit{
 
   credentials={
 
@@ -54,7 +42,7 @@ export class LoginComponent implements OnInit{
 
           this.loginService.loginUser(response.jwtToken);
 
-          window.location.href="/dashboard"
+          window.location.href="/login"
 
  
 
@@ -80,12 +68,8 @@ export class LoginComponent implements OnInit{
 
   }
 
- 
-
- 
-
- 
 
 }
 
- 
+
+

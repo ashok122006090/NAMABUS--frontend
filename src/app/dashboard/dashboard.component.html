@@ -1,0 +1,46 @@
+<h2>Admin Login</h2>
+<!-- Your login form goes here -->
+<P>__________________________________________________________________________</P>
+
+<p>If you're an admin, you can manage buses:</p>
+<ul>
+  <li><a routerLink="/add-bus">Add Bus</a></li>
+  <li><a routerLink="/buses">Bus List</a></li>
+  <P>__________________________________________________________________________</P>
+
+  <p>If you're an admin, you can view Booking list:</p>
+  <li><a routerLink="/booking-list">Booking List</a></li>
+   
+<P>__________________________________________________________________________</P>
+  <p>If you're an admin, you can see payments list:</p>
+  <li><a routerLink="/payments">Payment List</a></li>
+  <P>__________________________________________________________________________</P>
+  <p>If you're an admin, you can view feedback list:</p>
+  <li><a routerLink="/feedbacks">Feedback List</a></li>
+</ul>
+
+<div>
+
+  <mat-toolbar color="primary">
+  
+     
+  
+      <!-- <span><a mat-icon-button routerLink="/">Login App</a></span> -->
+  
+      <span class="example-spacer"></span>
+  
+      <a *ngIf="!loggedIn"  mat-icon-button routerLink="/login">Login</a>    
+  
+      <a *ngIf="loggedIn"  (click)="logoutUser()" mat-icon-button>Logout</a>
+  
+   
+  
+     
+  
+     
+  
+  </mat-toolbar>
+  
+   
+  
+  </div>

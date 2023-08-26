@@ -16,7 +16,7 @@ import { Feedback } from './feedback'; // Adjust the import path for your Feedba
 
 export class FeedbackService {
 
-  private apiUrl = "http://localhost:8080/api/feedbacks"; // Adjust the API endpoint
+  private apiUrl = "http://localhost:8070/api/feedbacks"; // Adjust the API endpoint
 
  
 

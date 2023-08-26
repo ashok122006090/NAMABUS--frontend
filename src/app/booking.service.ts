@@ -14,8 +14,13 @@ import { Booking } from './booking';
 
 export class BookingService {
 
-  private baseUrl = 'http://localhost:8080/busbookings/bookings';
+  private baseUrl = 'http://localhost:8070/busbookings/bookings';
 
+
+
+
+
+  
  
 
   constructor(private httpClient: HttpClient) {}
